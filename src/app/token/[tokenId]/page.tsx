@@ -8,9 +8,9 @@ export default function ListingPage({
 }: {
   params: { tokenId: string };
 }) {
-  const { tokenId } = params;
+  let { tokenId } = params;
   if (!tokenId || !/^[0-9]+$/.test(tokenId)) {
-    throw new Error("Missing listingId");
+    tokenId = "0";
   }
   return (
     <MarketplaceProvider

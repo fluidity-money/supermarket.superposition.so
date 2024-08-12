@@ -44,12 +44,13 @@ export function AllNftsGrid() {
         : itemsPerPage;
     pages.push({ start: Number(currentStartTokenId), count: count });
   }
+
   const { data: allNFTs } = useReadContract(
-    type === "ERC1155" ? getNFTs1155 : getNFTs721,
+    getNFTs1155,
     {
       contract: nftContract,
-      start: pages[currentPageIndex].start,
-      count: pages[currentPageIndex].count,
+      start: currentPageIndex == 0 ? 0 : pages[currentPageIndex].start,
+      count: currentPageIndex == 0 ? 0 : pages[currentPageIndex].count,
     }
   );
   const len = allNFTs?.length ?? 0;
@@ -61,7 +62,6 @@ export function AllNftsGrid() {
     xl: Math.min(len, 5),
   });
 
-  console.log({ pages, currentPageIndex, length: pages.length });
   return (
     <>
       <SimpleGrid columns={columns} spacing={4} p={4} mx="auto" mt="20px">

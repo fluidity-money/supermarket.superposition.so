@@ -1,3 +1,5 @@
+"use client";
+
 import { client } from "@/consts/client";
 import {
   Accordion,
@@ -135,15 +137,7 @@ export function Token(props: Props) {
           </Flex>
           <Box w={{ lg: "45vw", base: "90vw" }}>
             <Text>Collection</Text>
-            <Flex direction="row" gap="3">
-              <Heading>{contractMetadata?.name}</Heading>
-              <Link
-                color="gray"
-                href={`/collection/${nftContract.chain.id}/${nftContract.address}`}
-              >
-                <FaExternalLinkAlt size={20} />
-              </Link>
-            </Flex>
+            <Heading>{contractMetadata?.name}</Heading>
             <br />
             <Text># {nft?.id.toString()}</Text>
             <Heading>{nft?.metadata.name}</Heading>

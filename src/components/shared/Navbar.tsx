@@ -41,12 +41,8 @@ export function Navbar() {
             as={Link}
             href="/"
             _hover={{ textDecoration: "none" }}
-            bgGradient="linear(to-l, #7928CA, #FF0080)"
-            bgClip="text"
-            fontWeight="extrabold"
           >
-            {/* Replace this with your own branding */}
-            THIRDMART
+            <Image src="/superposition.svg" />
           </Heading>
         </Box>
         <Box display={{ lg: "block", base: "none" }}>

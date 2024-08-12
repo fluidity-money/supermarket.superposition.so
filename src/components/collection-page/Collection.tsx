@@ -50,7 +50,7 @@ export function Collection() {
             }}
           />
           <Heading mx="auto">
-            {contractMetadata?.name || "Unknown collection"}
+            Supercats
           </Heading>
           {contractMetadata?.description && (
             <Text
@@ -70,7 +70,6 @@ export function Collection() {
             isLazy
           >
             <TabList>
-              <Tab>Listings ({listingsInSelectedCollection.length || 0})</Tab>
               <Tab>
                 All items{" "}
                 {supplyInfo
@@ -81,15 +80,14 @@ export function Collection() {
                     ).toString()})`
                   : ""}
               </Tab>
-              {/* Support for English Auctions coming soon */}
-              {/* <Tab>Auctions ({allAuctions?.length || 0})</Tab> */}
+              <Tab>Listings ({listingsInSelectedCollection.length || 0})</Tab>
             </TabList>
           </Tabs>
         </Flex>
       </Box>
       <Flex direction="column">
-        {tabIndex === 0 && <ListingGrid />}
-        {tabIndex === 1 && <AllNftsGrid />}
+        {tabIndex === 0 && <AllNftsGrid />}
+        {tabIndex === 1 && <ListingGrid />}
       </Flex>
     </>
   );

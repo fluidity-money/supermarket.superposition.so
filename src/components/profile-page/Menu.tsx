@@ -51,7 +51,7 @@ export function ProfileMenu(props: Props) {
                 <Flex direction="row" gap="3">
                   <Image src={item.thumbnailUrl ?? ""} w="40px" rounded="8x" />
                   <Box my="auto">
-                    <Text>{item.title ?? "Unknown collection"}</Text>
+                    <Text>{item.title ?? "Supercats"}</Text>
                   </Box>
                 </Flex>
               </Box>

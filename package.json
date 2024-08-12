@@ -17,12 +17,16 @@
     "@emotion/styled": "^11.11.5",
     "@tanstack/react-query": "^5.44.0",
     "blo": "^1.2.0",
+    "bufferutil": "^4.0.8",
+    "encoding": "^0.1.13",
     "framer-motion": "^11.2.10",
-    "next": "14.2.4",
+    "next": "13.4.19",
+    "pino-pretty": "^11.2.2",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "thirdweb": "^5.28.0"
+    "thirdweb": "^5.28.0",
+    "utf-8-validate": "^6.0.4"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -133,7 +133,7 @@ export function ProfileSection(props: Props) {
                   </TabList>
                 </Tabs>
                 <Link
-                  href={`/collection/${selectedCollection.chain.id}/${selectedCollection.address}`}
+                  href={`https://testnet-explorer.superposition.so/token/0xbcA5Ebd414b7c695A8db400Df231fA2A35bbD441`}
                   color="gray"
                 >
                   View collection <ExternalLinkIcon mx="2px" />

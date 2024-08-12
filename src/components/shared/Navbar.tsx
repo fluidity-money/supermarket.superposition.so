@@ -42,7 +42,7 @@ export function Navbar() {
             href="/"
             _hover={{ textDecoration: "none" }}
           >
-            <Image src="/superposition.svg" />
+            <Image src="/supermarket.svg" width={20} height={20}/>
           </Heading>
         </Box>
         <Box display={{ lg: "block", base: "none" }}>

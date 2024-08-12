@@ -49,7 +49,7 @@ export function AllNftsGrid() {
     getNFTs1155,
     {
       contract: nftContract,
-      start: currentPageIndex == 0 ? 0 : pages[currentPageIndex].start,
+      start: currentPageIndex == 0 ? 0 :pages[currentPageIndex].start,
       count: currentPageIndex == 0 ? 0 : pages[currentPageIndex].count,
     }
   );
